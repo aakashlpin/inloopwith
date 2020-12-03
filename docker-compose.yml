@@ -1,0 +1,10 @@
+version: '2'
+services:
+  inloop:
+    container_name: inloop
+    build: .
+    env_file:
+      - ~/apps/inloop/docker.env
+    restart: always
+    ports:
+      - '5000:3000'
